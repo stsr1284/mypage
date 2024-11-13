@@ -1,127 +1,205 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="보라보라한 르탄이">
-    <meta property="og:description" content="힙한 취미 코딩!">
-    <meta property="og:image" content="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/free_myprofile/%EB%B3%B4%EB%9D%BC+%EB%A5%B4%ED%83%84%EC%9D%B4/%EB%B3%B4%EB%9D%BC%EB%A5%B4%ED%83%84_%ED%94%84%EB%A1%9C%ED%95%84.png">
-    <script type="text/javascript" src="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/free/sparta.js"></script>
-    <title>보라 르탄이</title>
-    <style>
-        @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
-        * {
-            font-family: "Pretendard",serif;
-        }
-        body {
-            background-color:#EBEAFA;
-            background-image: url('https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/free_myprofile/%EB%B3%B4%EB%9D%BC+%EB%A5%B4%ED%83%84%EC%9D%B4/%EB%B0%98%EC%A7%9D%EC%9D%B4.png');
-        }
-        .profile {
-            width: 100px;
-            height: 100px;
-            border-radius: 100%;
-            border: 2px solid white;
-            background-image: url('https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/free_myprofile/%EB%B3%B4%EB%9D%BC+%EB%A5%B4%ED%83%84%EC%9D%B4/%EB%B3%B4%EB%9D%BC%EB%A5%B4%ED%83%84_%ED%94%84%EB%A1%9C%ED%95%84.png');
-            background-position: center;
-            background-size: cover;
-        }
-        .main {
-            color : #000000;
-            font-size: 18px;
-            size : 20px;
-            margin-top: 30px;
-            margin-bottom: 10px;
-        }
-        .sub {
-            color : #000000;
-            font-size: 14px;
-            font-weight: 400;
-            size : 14px;
-            margin-top: 0px;
-            margin-bottom: 30px;
-        }
-        .wrap {
-            width: 300px;
-            margin: 30px auto 0px auto;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .bigbutton {
-            width: 320px;
-            height: 59px;
-            border-radius: 100px;
-            background-color: white;
-            margin-bottom: 16px;
-            font-size: 16px;
-            font-weight: bold;
-            color:#000000;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-decoration: none;
-            box-shadow: 0px 2px 8px rgba(152, 151, 185, 0.24) ;
-        }
-        .minibutton {
-            width: 152px;
-            height: 59px;
-            border-radius: 100px;
-            background-color: white;
-            font-size: 16px;
-            font-weight: bold;
-            color:#000000;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            text-decoration: none;
-            box-shadow: 0px 2px 8px rgba(152, 151, 185, 0.24);
-            margin: 0px 8px 17px 8px;
-        }
-        .buttons {
-            display: flex;
-        }
-        .wrap > a:hover {
-            background-color: #f2f2f2;
-        }
-        .buttons > a:hover {
-            background-color: #f2f2f2;
-        }
-        .rtan {
-            width: 100px;
-            height: 170px;
-            background-image: url('https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/free_myprofile/%EB%B3%B4%EB%9D%BC+%EB%A5%B4%ED%83%84%EC%9D%B4/%EC%95%89%EC%95%84%EC%9E%88%EB%8A%94%EB%A5%B4%ED%83%84.png');
-            background-position: center;
-            background-size: cover;
-            position: absolute;
-            bottom: 63px;
-        }
-        .purple {
-            width: 100%;
-            height: 95px;
-            background-color: #9894E4;
-            position : absolute;
-            bottom : 0;
-            
-        }
-    </style>
-</head>
-<body>
-    <div class="wrap">
-        <div class="profile"></div>
-        <h1 class="main">동학이</h1>
-        <p class="sub">컴둥이 동학이랍니다.</p>
-        <a class="bigbutton"target="_blank" href="https://sparta-profile.oopy.io/">아 잠온다</a>
-        <div class="buttons">
-            <a class="minibutton" target="_blank" href="https://www.instagram.com/spartacodingclub/">아 배고프다</a>
-            <a class="minibutton"target="_blank" href="https://spartacodingclub.kr/community/blog">아 지루하다</a>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./src/css/navBarStyle.css" />
+        <link rel="stylesheet" href="./src/css/bannerImgStyle.css" />
+        <link rel="stylesheet" href="./src/css/franchiseWhyStyle.css" />
+        <link rel="stylesheet" href="./src/css/franchiseRoleStyle.css" />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+        />
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper/swiper-bundle.min.css"
+        />
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    </head>
+    <body>
+        <nav class="navBar">
+            <div class="p_container">
+                <div class="p_container_inner">
+                    <div class="nav_logo_container">
+                        <a class="nav_logo_icon" href="[main페이지로]">
+                            <img
+                                class="nav_lcon_img"
+                                src="./src/img/woolim_logo.png"
+                                alt="logo"
+                            />
+                        </a>
+                    </div>
+                    <div class="nav_mobile">
+                        <span class="mobile_toggle_btn">
+                            <div class="material-symbols-outlined toggle_icon">
+                                menu
+                            </div>
+                        </span>
+                    </div>
+                    <div class="nav_content_container">
+                        <ul class="nav_menu"></ul>
+                        <ul class="nav_menu">
+                            <li class="nav_item">
+                                <a class="nav_item_a" href="[카테고리 주소]">
+                                    카테고리
+                                </a>
+                            </li>
+                            <li class="nav_item">
+                                <a class="nav_item_a" href="[카테괼 주소]">
+                                    카테고리
+                                </a>
+                            </li>
+                            <li class="nav_item">
+                                <a class="nav_item_a" href="[카테고리 주소]">
+                                    카테고리
+                                </a>
+                            </li>
+                            <li class="nav_item">
+                                <a class="nav_item_a" href="[카테고리 주소]">
+                                    카테고리
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="mainContainer">
+            <section class="mainSection">
+                <!-- carousel -->
+                <div class="swiper-container" id="carousel-container">
+                    <div class="swiper-wrapper">
+                        <!-- db로 반복문할 부분 -->
+                        <div class="swiper-slide">
+                            <img
+                                draggable="false"
+                                src="./src/img/main_slider_02.jpg"
+                            />
+                        </div>
+                        <div class="swiper-slide">
+                            <img
+                                draggable="false"
+                                src="./src/img/main_slider_03.jpg"
+                            />
+                        </div>
+                        <div class="swiper-slide">
+                            <img
+                                draggable="false"
+                                src="./src/img/main_slider_04.jpg"
+                            />
+                        </div>
+                        <div class="swiper-slide">
+                            <img
+                                draggable="false"
+                                src="./src/img/main_slider_05-3.jpg"
+                            />
+                        </div>
+                    </div>
+                    <div class="swiper-button-controls">
+                        <div class="swiper-button-prev" id="prev"></div>
+                        <div class="swiper-button-next" id="next"></div>
+                    </div>
+                </div>
+                <!-- carousel -->
+
+                <div class="franchiseWhyWrapper">
+                    <div class="franchiseWhy">
+                        <h1 class="franchiseWhyTop">
+                            왜 우림칼국수를 선택해야 할까?
+                        </h1>
+                        <div class="franchiseWhyMid">
+                            <span>광고비 無</span>
+                            <span>인테리어 자율</span>
+                        </div>
+                        <div class="franchiseWhyBot">
+                            <div class="franchiseWhyBox" id="box1">
+                                <h2>작은 창업 비용</h2>
+                                <h4>상권에 구애받지 않는 업종</h4>
+                                <p>
+                                    저렴한 보증금과 입대료로 수월한 창업이
+                                    가능하며 고급스러운 인테리어가 필요없어 더욱
+                                    부담이 없습니다.
+                                </p>
+                            </div>
+                            <div class="franchiseWhyBox" id="box2">
+                                <h2>쉬운 조리법</h2>
+                                <h4>우림만의 노하우가 담긴 운영구조</h4>
+                                <p>
+                                    초보 점주님들도 얼만드지 운영할 수 있는
+                                    시스템으로 인건비 젊가과 지속적인 운영이
+                                    가능합니다.
+                                </p>
+                            </div>
+                            <div class="franchiseWhyBox" id="box3">
+                                <h2>차별화된 면발</h2>
+                                <h4>흉내낼 수 없는 쫄깃한 면발</h4>
+                                <p>
+                                    국물내는 기술도 전수 받으시고 차별화된
+                                    면발은 주렴한 가격에 독접공급 합니다.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="franchiseRoleWrapper">
+                    <div class="emptyBox"></div>
+                    <div class="role3">우림 칼국수 가맹점 운영 3대 원칙</div>
+                    <div class="roleBoxs">
+                        <div class="roleBox">
+                            <span class="roleBoxTitle">
+                                <p>상생</p>
+                            </span>
+                            <span class="roleBoxContent">
+                                <span class="contentFirst">
+                                    갑과 을이 아니라 ‘함께' 입니다.
+                                </span>
+                                <span>
+                                    본사와 가맹점 모두가 더불어 성공할 수 있도록
+                                    하겠습니다.
+                                </span>
+                            </span>
+                        </div>
+                        <div class="roleBox">
+                            <span class="roleBoxTitle">
+                                <p>공유</p>
+                            </span>
+                            <span class="roleBoxContent">
+                                <span class="contentFirst"
+                                    >단순한 비법전수가 아닙니다.</span
+                                >
+                                <span>
+                                    우림 칼국수 만의 특별함을 아낌없이
+                                    공유하겠습니다.
+                                </span>
+                            </span>
+                        </div>
+                        <div class="roleBox">
+                            <span class="roleBoxTitle">
+                                <p>자율</p>
+                            </span>
+                            <span class="roleBoxContent">
+                                <span class="contentFirst">
+                                    인테리어부터 재료까지 부당한 간섭이
+                                    없습니다.
+                                </span>
+                                <span>
+                                    가맹점의 자율성이 모두의 성공입니다.
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="emptyBox"></div>
+                </div>
+            </section>
+            <div class="joinTalk">가맹 문의</div>
         </div>
-        <div class="purple"></div>
-        <div class="rtan"></div>
-    </div>
-</body>
+        <script src="./src/js/navControl.js"></script>
+        <script src="./src/js/mainBanner.js"></script>
+    </body>
 </html>

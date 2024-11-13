@@ -1,0 +1,237 @@
+body {
+    background-color: #fafafa;
+    padding-left: 2%; /* 반응형을 고려한 여백 조정 */
+    padding-right: 2%;
+    margin: 0;
+    font-family: Arial, sans-serif; /* 가독성을 위한 폰트 추가 */
+}
+
+.manageBox {
+    width: 100%;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+    padding: 10px 0 20px 0;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 1.5rem; /* 헤더의 반응형 폰트 크기 */
+    margin: 0 0 10px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.newImg {
+    display: none;
+}
+
+.chooseImg {
+    border: 1px solid black;
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.submitBtn {
+    background-color: white;
+    border: 1px solid black;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/*-----------------------bannerList-------------------------------------*/
+.bannerImageList {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow-x: auto;
+    list-style-type: none;
+    gap: 10px;
+    width: 100%;
+    height: 220px;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.bannerImageList li {
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    min-width: 240px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.listBannerImgBox {
+    height: 70%;
+    width: 100%;
+}
+
+.listBannerBtnBox {
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+/*-----------------------franchiseList----------------------------*/
+.franchiseList {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    align-items: center;
+    gap: 10px;
+    list-style-type: none;
+    width: 100%;
+    height: 270px;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.franchiseList li {
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    min-width: 240px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.listFranTop {
+    height: 60%;
+    width: 100%;
+}
+
+.listFranMid {
+    height: 30%;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    word-wrap: break-word;
+}
+
+.listFranBottom {
+    height: 10%;
+    width: 100%;
+    text-align: center;
+}
+
+/*-----------------------menuList----------------------------*/
+.menuImgList {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow-x: auto;
+    gap: 10px;
+    width: 100%;
+    height: 220px;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.menuImgList li {
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    min-width: 220px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.menuTop {
+    height: 60%;
+    width: 100%;
+}
+
+.menuMid {
+    height: 30%;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    word-wrap: break-word;
+}
+
+.menuBot {
+    height: 10%;
+    width: 100%;
+    text-align: center;
+}
+
+/* 반응형 조정 */
+@media (min-width: 768px) {
+    body {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+}
+@media (max-width: 768px) {
+    .manageBox {
+        padding: 10px;
+    }
+
+    .bannerImageList,
+    .franchiseList,
+    .menuImgList {
+        flex-direction: column;
+        height: auto;
+        overflow-x: hidden;
+    }
+
+    .bannerImageList li,
+    .franchiseList li,
+    .menuImgList li {
+        /* min-width: 100%; */
+        /* height: auto; */
+    }
+}
+
+@media (max-width: 480px) {
+    .manageBox {
+        padding: 5px;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    .submitBtn,
+    .chooseImg {
+        padding: 8px;
+    }
+
+    /* .bannerImageList,
+    .franchiseList,
+    .menuImgList {
+        height: auto;
+    } */
+
+    /* .bannerImageList li,
+    .franchiseList li,
+    .menuImgList li {
+        min-width: 100%;
+        height: auto;
+    } */
+
+    /* .listBannerBtnBox,
+    .listFranBottom,
+    .menuBot {
+        font-size: 14px;
+    } */
+}

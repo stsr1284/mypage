@@ -1,0 +1,79 @@
+.franchiseWhyWrapper {
+    /* background-color: #f6f8f9; */
+    background-color: #f9f9fb;
+    /* background-color: white; */
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 35px;
+    padding-bottom: 100px;
+    /* margin-top: 20px; */
+}
+
+.franchiseWhy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.franchiseWhy h1 {
+    font-size: 2.2em;
+    font-weight: 500;
+    background-color: #c5e77b;
+    background-color: #dff2b6;
+    padding: 1px 10px 1px 10px;
+}
+
+.franchiseWhyMid {
+    font-size: 2em;
+    font-weight: 500;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.franchiseWhyBot {
+    display: flex;
+    margin-top: 40px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* gap: 22px; */
+    max-width: 950px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.franchiseWhyBox {
+    padding: 30px 30px 40px 30px;
+    border-radius: 20px;
+    background-color: white;
+    width: 25%;
+}
+
+.franchiseWhyBot h2 {
+    margin: 0px 0px 12px 0px;
+}
+.franchiseWhyBot h4 {
+    margin: 0px 0px 7px 0px;
+    font-size: 20px;
+}
+.franchiseWhyBot p {
+    margin: 0;
+    font-size: 16px;
+}
+
+@media (max-width: 767px) {
+    .franchiseWhyBot {
+        width: 100%;
+        height: auto;
+        display: flex;
+        gap: 20px;
+        align-items: flex-start;
+    }
+    .franchiseWhyBox {
+        width: 100%;
+    }
+}

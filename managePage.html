@@ -1,0 +1,155 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Banner Management</title>
+        <link rel="stylesheet" href="./src/css/managePageStyle.css" />
+        <!-- Link to your CSS file -->
+    </head>
+    <body>
+        <div class="manageBox">
+            <h1>배너 이미지 관리</h1>
+            <form id="bannerImgForm" action="" method="post">
+                <input
+                    class="newImg bannerImg"
+                    type="file"
+                    id="addImage"
+                    required
+                    accept="image/*"
+                />
+                <label class="chooseImg" for="addImage">이미지 선택하기</label>
+                <button type="submit" class="submitBtn">저장하기</button>
+            </form>
+            <ul class="bannerImageList">
+                <c:forEach var="image" items="${bannerImages}">
+                    <li data-id="${image.id}">
+                        <div class="listBannerImgBox">
+                            <img
+                                src="${image.url}"
+                                alt="${image.alt}"
+                                class="thumbnail"
+                            />
+                        </div>
+                        <div class="listBannerBtnBox">
+                            <button class="moveLeft" data-id="${image.id}">
+                                &larr;
+                            </button>
+                            <button class="moveRight" data-id="${image.id}">
+                                &rarr;
+                            </button>
+                            <button class="remove" data-id="${image.id}">
+                                삭제
+                            </button>
+                        </div>
+                    </li>
+                </c:forEach>
+            </ul>
+        </div>
+
+        <!--------------------------franchiseList--------------------------------->
+        <div class="manageBox">
+            <h1>프랜차이즈 관리</h1>
+            <form id="addImageForm" action="" method="post">
+                <input
+                    class="newImg"
+                    type="file"
+                    id="addImage"
+                    required
+                    accept="image/*"
+                />
+                <label class="chooseImg" for="addImage">이미지 선택하기</label>
+                <input
+                    type="text"
+                    id="franchisePlaceName"
+                    placeholder="지점 이름"
+                />
+                <input type="text" id="franchiseNum" placeholder="연락처" />
+                <input type="text" id="franchiseAddress" placeholder="주소" />
+                <button type="submit" class="submitBtn">저장하기</button>
+            </form>
+            <ul class="franchiseList">
+                <c:forEach var="franchise" items="${franchises}">
+                    <li data-id="${franchise.id}">
+                        <div class="listFranTop">
+                            <img
+                                src="${franchise.url}"
+                                alt="${franchise.alt}"
+                                class="thumbnail"
+                            />
+                        </div>
+                        <div class="listFranMid">
+                            <div>
+                                <div>${franchise.placeName}</div>
+                                <div>${franchise.num}</div>
+                            </div>
+                            <div>
+                                <div>${franchise.address}</div>
+                            </div>
+                        </div>
+                        <div class="listFranBottom">
+                            <button class="moveLeft" data-id="${franchise.id}">
+                                &larr;
+                            </button>
+                            <button class="moveRight" data-id="${franchise.id}">
+                                &rarr;
+                            </button>
+                            <button class="remove" data-id="${franchise.id}">
+                                삭제
+                            </button>
+                        </div>
+                    </li>
+                </c:forEach>
+            </ul>
+        </div>
+
+        <!--------------------------menuList--------------------------------->
+        <div class="manageBox">
+            <h1>메뉴 관리</h1>
+            <form id="addImageForm" action="" method="post">
+                <input
+                    class="newImg"
+                    type="file"
+                    id="addImage"
+                    required
+                    accept="image/*"
+                />
+                <label class="chooseImg" for="addImage">이미지 선택하기</label>
+                <input type="text" id="menuName" placeholder="메뉴 이름" />
+                <input type="text" id="menuDescribe" placeholder="메뉴 설명" />
+                <button type="submit" class="submitBtn">저장하기</button>
+            </form>
+            <ul class="menuImgList">
+                <c:forEach var="image" items="${bannerImages}">
+                    <li data-id="${image.id}">
+                        <div class="menuTop">
+                            <img
+                                src="${image.url}"
+                                alt="${image.alt}"
+                                class="thumbnail"
+                            />
+                        </div>
+                        <div class="menuMid">
+                            <div>${image.name}</div>
+                            <div>${image.describe}</div>
+                        </div>
+                        <div class="menuBot">
+                            <button class="moveLeft" data-id="${image.id}">
+                                &larr;
+                            </button>
+                            <button class="moveRight" data-id="${image.id}">
+                                &rarr;
+                            </button>
+                            <button class="remove" data-id="${image.id}">
+                                삭제
+                            </button>
+                        </div>
+                    </li>
+                </c:forEach>
+            </ul>
+        </div>
+
+        <script src="./src/js/bannerImgManage.js"></script>
+    </body>
+</html>

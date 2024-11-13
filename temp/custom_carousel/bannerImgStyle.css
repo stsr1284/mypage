@@ -1,0 +1,123 @@
+/* .newImg {
+    display: none;
+}
+
+.chooseImg {
+    border: 1px solid black;
+    padding: 2px 5px;
+}
+
+.submitBtn {
+} */
+
+.mainSection {
+    position: relative;
+    margin-top: 70px;
+    width: 100%;
+    /* overflow: hidden; */
+    display: flex;
+    flex-direction: column;
+}
+/* 
+.mainBanner {
+    width: 400vw; 
+}
+
+.carousel-item {
+    width: 100vw; 
+    float: left; 
+}
+
+.carousel-item img {
+    width: 100%; 
+    
+    object-fit: cover; 
+} */
+
+/* 드래그할 때 파란색 하이라이트 제거 */
+#carousel-container, 
+#carousel, 
+.slide, 
+#controls {
+    user-select: none; /* 텍스트 선택 방지 */
+    -webkit-user-select: none; /* 크롬, 사파리 */
+    -moz-user-select: none; /* 파이어폭스 */
+    -ms-user-select: none; /* 인터넷 익스플로러 */
+}
+
+
+#carousel-container {
+    box-sizing: border-box;
+    width: 100vw;
+    max-height: 800px;
+    position: relative;
+}
+
+#carousel {
+    height: 100%;
+    max-height: 800px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.animate {
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
+}
+
+.slide {
+    list-style: none;
+    float: left;
+    width: 100vw;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#controls {
+    position: absolute;
+    box-sizing: border-box;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: auto;
+}
+
+#controls span {
+    cursor: pointer;
+    opacity: 0.4;
+    font-size: 7vw; /* 화면 크기에 따라 동적으로 크기 조정 */
+    width: 7vw;
+    height: 7vw;
+}
+
+#controls span:hover {
+    opacity: 1;
+}
+
+#prev {
+    float: left;
+}
+
+#next {
+    float: right;
+}
+
+
+/* ------------------------------------------------------------------------------------- */
+
+.franchiseGood {
+    width: 100%;
+    height: 100px;
+    background-color: beige;
+}

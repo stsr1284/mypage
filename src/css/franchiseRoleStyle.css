@@ -1,0 +1,66 @@
+.franchiseRoleWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.emptyBox {
+    height: 100px;
+    width: 100%;
+}
+
+.role3 {
+    font-size: 2em;
+    margin-bottom: 60px;
+}
+
+.roleBoxs {
+    width: 100%;
+    max-width: 950px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: space-between;
+}
+
+.roleBox {
+    height: 80px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.roleBoxTitle {
+    width: 18%;
+    display: flex;
+    justify-content: center;
+    font-size: 27px;
+    font-weight: 500;
+}
+
+.roleBoxTitle p {
+    background-color: #dff2b6;
+    padding: 1px 6px 1px 6px;
+}
+
+.roleBoxContent {
+    font-size: 18px;
+}
+
+.contentFirst {
+    font-weight: 500;
+}
+
+@media (max-width: 767px) {
+    .contentFirst {
+        display: block;
+        margin-bottom: 2px;
+    }
+}
